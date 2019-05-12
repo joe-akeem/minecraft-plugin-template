@@ -11,4 +11,7 @@ commands:
   bogen:
     description: Ein neuer Bogen!
   pfeil:
-    description: 64 neue Pfeile!
+      description: 64 neue Pfeile!
+  fackel:
+    description: 32 neue Fakeln!
+
