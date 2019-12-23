@@ -31,6 +31,14 @@ In order for it to find the jar containing our plugin we need to mount the `targ
 docker run --rm -e EULA=TRUE -p 25565:25565 -v $(pwd)/target:/spigot/plugins t13a/spigot:1.13.2
 ````
 
+In the log produced by the server on the command line watch out for the following lines indicating that the lugin
+was deployed properly:
+
+```
+[19:33:52 INFO]: [TemplatePlugin] Enabling TemplatePlugin v1.0
+[19:33:52 INFO]: [TemplatePlugin] Added the 'enrich' command.
+``` 
+
 Start the Mincraft client on your computer and connect to the local Mincraft server by specifying `localhost` as Server Address.
 
 Open the command line in Minecraft (by pressing `t`) try the new command and see what happens:
