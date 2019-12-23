@@ -1,4 +1,4 @@
-# Minecraft example Plugin for Spigot
+# Example Plugin for Spigot Minecraft Server
 
 An example plugin for the spigot Minecraft server that can be used as a template to write your own plugins.
 Minecraft plugins are a great way to learn Java programming.
@@ -13,7 +13,7 @@ In order to try this out you need the following software to be installed on your
 
 ## Quickstart
 
-Clone the template project to you system:
+Clone the template project to your system:
 ````bash
 git clone https://github.com/joe-akeem/minecraft-plugin-template.git
 ````
@@ -25,20 +25,20 @@ mvn package
 ```` 
 
 To test the plugin we fire up the spigot Minecraft server using an existing docker image.
-In order for it to find the jar containing our plugin we need to mount the `target` folder to `/spigot/plugins``
+In order for it to find the jar containing our plugin we need to mount the `target` folder to `/spigot/plugins`
 
 ````bash
 docker run --rm -e EULA=TRUE -p 25565:25565 -v $(pwd)/target:/spigot/plugins t13a/spigot:1.13.2
 ````
 
-Start the Mincraft client on your computer and connect to the local Mincraft server by specifying `localhost as Server Address.
+Start the Mincraft client on your computer and connect to the local Mincraft server by specifying `localhost` as Server Address.
 
 Open the command line in Minecraft (by pressing `t`) try the new command and see what happens:
 ```
 /enrich
 ````
 
-To play with the code e.g. import this plugin in (Intellij)[https://www.jetbrains.com/de-de/idea/download/]. The
+To play with the code e.g. import this plugin in [Intellij](https://www.jetbrains.com/de-de/idea/download/). The
 community edition is absolutely sufficient. Read [here](https://www.jetbrains.com/help/idea/maven-support.html) how to
 import an existing Maven project.
 
@@ -50,4 +50,4 @@ that server's `plugin` folder.
 
 ## Detailed instructions
 
-TODO - contributions welcome! ``
+TODO - contributions welcome! 
