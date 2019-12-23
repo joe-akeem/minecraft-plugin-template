@@ -1,17 +1,8 @@
-name: HelloWorldPlugin
+name: TemplatePlugin
 version: 1.0
 api-version: 1.13
-main: de.joeakeem.plugin.Main
+main: de.joeakeem.spigotmc.plugin.template.TemplatePlugin
 
 commands:
-  reich:
-    description: Macht dich reich!
-  hack:
-    description: Eine neue Diamanten-Spitzuhacke
-  bogen:
-    description: Ein neuer Bogen!
-  pfeil:
-      description: 64 neue Pfeile!
-  fackel:
-    description: 32 neue Fakeln!
-
+  enrich:
+    description: Makes you rich!

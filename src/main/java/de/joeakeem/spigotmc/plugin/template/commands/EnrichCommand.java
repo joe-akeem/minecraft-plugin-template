@@ -1,4 +1,4 @@
-package de.joeakeem.plugin.commands;
+package de.joeakeem.spigotmc.plugin.template.commands;
 
 import org.bukkit.Material;
 import org.bukkit.command.Command;
@@ -8,16 +8,16 @@ import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.PlayerInventory;
 
-public class FakelComand implements CommandExecutor {
+public class EnrichCommand implements CommandExecutor {
 
     @Override
     public boolean onCommand(CommandSender sender, Command command, String s, String[] strings) {
         if (sender instanceof Player) {
             Player player = (Player) sender;
             PlayerInventory inventory = player.getInventory();
-            ItemStack itemstack = new ItemStack(Material.TORCH , 32);
+            ItemStack itemstack = new ItemStack(Material.DIAMOND, 64);
             inventory.addItem(itemstack);
-            player.sendMessage("Dann schiess mal los!!");
+            player.sendMessage("You got 64 diamonds!!");
         } else {
             sender.sendMessage("You must be a player!");
             return false;

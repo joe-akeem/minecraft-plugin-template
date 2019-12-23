@@ -1,6 +1,6 @@
-package de.joeakeem.plugin.event;
+package de.joeakeem.spigotmc.plugin.template.event;
 
-import de.joeakeem.plugin.Main;
+import de.joeakeem.spigotmc.plugin.template.TemplatePlugin;
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
@@ -14,7 +14,7 @@ public class MovementListener implements Listener {
 
     private final Logger logger;
 
-    public MovementListener(Main plugin) {
+    public MovementListener(TemplatePlugin plugin) {
         plugin.getServer().getPluginManager().registerEvents(this, plugin);
         this.logger = plugin.getLogger();
     }
