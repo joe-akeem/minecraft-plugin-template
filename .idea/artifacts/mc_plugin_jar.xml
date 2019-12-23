@@ -1,9 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" name="mc-plugin:jar">
-    <output-path>$PROJECT_DIR$/../mc-server/plugins</output-path>
-    <root id="archive" name="mc-plugin.jar">
-      <element id="module-output" name="mc-plugin" />
-      <element id="extracted-dir" path="$PROJECT_DIR$/../mc-server/spigot-1.14.jar" path-in-jar="/" />
-    </root>
-  </artifact>
-</component>
