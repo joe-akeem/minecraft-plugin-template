@@ -25,10 +25,16 @@ mvn package
 ```` 
 
 To test the plugin we fire up the spigot Minecraft server using an existing docker image.
-In order for it to find the jar containing our plugin we need to mount the `target` folder to `/spigot/plugins`
+In order for it to find the jar containing our plugin we need to mount the `target` folder to `/data/plugins`
 
 ````bash
-docker run --rm -e EULA=TRUE -p 25565:25565 -v $(pwd)/target:/spigot/plugins t13a/spigot:1.13.2
+docker run --rm -e EULA=true  -p 25565:25565 -v $(pwd)/target:/data/plugins cmunroe/spigot:1.16.4 
+````
+
+To test it with bukkit do:
+
+````bash
+docker run --rm -e EULA=true  -p 25565:25565 -v $(pwd)/target:/data/plugins cmunroe/bukkit:1.16.4
 ````
 
 In the log produced by the server on the command line watch out for the following lines indicating that the plugin
